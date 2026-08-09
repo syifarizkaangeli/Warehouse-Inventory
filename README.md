@@ -1,4 +1,4 @@
-# 📦 Gudang Inventory System
+# 📦 Warehouse Inventory System
 
 A simple web-based inventory management system built with PHP and MySQL.
 
@@ -38,7 +38,7 @@ This application is designed to help manage warehouse inventory, including produ
 ## 📁 Project Structure
 
 ```text
-Gudang-htdocs/
+Warehouse-inventory/
 │
 ├── config.php
 ├── index.php
@@ -65,7 +65,7 @@ C:\xampp\htdocs\
 
 The final location should be:
 
-C:\xampp\htdocs\Gudang-htdocs
+C:\xampp\htdocs\Warehouse-inventory
 3. Setup Database
 
 Open:
@@ -82,7 +82,7 @@ The SQL file will create the gudang database and barang table.
 
 Open:
 
-http://localhost/Gudang-htdocs/beranda.php
+http://localhost/Warehouse-inventory/beranda.php
 📊 Main Pages
 Dashboard
 /beranda.php
@@ -150,20 +150,6 @@ The sidebar automatically changes into a mobile navigation drawer on smaller scr
 
 This project was created for educational and inventory management purposes.
 
-
----
-
-# 8. `.gitignore`
-
-Tambahkan juga:
-
-```gitignore
-.env
-.env.*
-!.env.example
-
-/vendor/
-/node_modules/
 
 *.log
 
