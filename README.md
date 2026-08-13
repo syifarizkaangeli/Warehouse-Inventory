@@ -48,32 +48,29 @@ Warehouse-inventory/
 ├── gudang.sql
 ├── README.md
 └── .gitignore
-🚀 How to Run
+
+## 🚀 How to Run
 1. Install XAMPP
 
 Make sure Apache and MySQL are installed.
-
 Start:
-
 Apache
 MySQL
+
 2. Move the Project
 
 Put the project inside:
-
 C:\xampp\htdocs\
 
 The final location should be:
-
 C:\xampp\htdocs\Warehouse-inventory
+
 3. Setup Database
 
 Open:
-
 http://localhost/phpmyadmin
 
 Import:
-
 gudang.sql
 
 The SQL file will create the gudang database and barang table.
@@ -81,14 +78,13 @@ The SQL file will create the gudang database and barang table.
 4. Open the Application
 
 Open:
-
 http://localhost/Warehouse-inventory/beranda.php
-📊 Main Pages
+
+## 📊 Main Pages
 Dashboard
 /beranda.php
 
 Displays:
-
 Total product types
 Total stock
 Total inventory value
@@ -98,7 +94,6 @@ Inventory
 /index.php
 
 Used to:
-
 Add products
 Edit products
 Delete products
@@ -110,14 +105,12 @@ Reports
 
 Displays a complete inventory report and provides a print function.
 
-🗄️ Database
+## 🗄️ Database
 
 Database:
-
 gudang
 
 Main table:
-
 barang
 
 Columns:
@@ -129,16 +122,15 @@ jumlah	Stock quantity
 harga_per_pcs	Price per unit
 created_at	Creation date
 updated_at	Last update date
-🔐 Security
+
+## 🔐 Security
 
 The application uses PDO prepared statements for database queries to reduce SQL injection risks.
-
 User-provided values are also escaped when displayed in HTML.
 
-📱 Responsive Design
+## 📱 Responsive Design
 
 The interface supports:
-
 Desktop
 Laptop
 Tablet
@@ -146,15 +138,12 @@ Mobile
 
 The sidebar automatically changes into a mobile navigation drawer on smaller screens.
 
-📄 License
+##📄 License
 
 This project was created for educational and inventory management purposes.
 
-
 *.log
-
 .DS_Store
 Thumbs.db
-
 .idea/
 .vscode/
