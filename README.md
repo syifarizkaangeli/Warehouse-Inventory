@@ -48,102 +48,144 @@ Warehouse-inventory/
 ├── gudang.sql
 ├── README.md
 └── .gitignore
+```
+
+---
 
 ## 🚀 How to Run
-1. Install XAMPP
+
+### 1. Install XAMPP
 
 Make sure Apache and MySQL are installed.
-Start:
-Apache
-MySQL
 
-2. Move the Project
+Start:
+
+- Apache
+- MySQL
+
+### 2. Move the Project
 
 Put the project inside:
+
+```text
 C:\xampp\htdocs\
+```
 
 The final location should be:
-C:\xampp\htdocs\Warehouse-inventory
 
-3. Setup Database
+```text
+C:\xampp\htdocs\Warehouse-inventory
+```
+
+### 3. Setup Database
 
 Open:
+
+```text
 http://localhost/phpmyadmin
+```
 
 Import:
+
+```text
 gudang.sql
+```
 
-The SQL file will create the gudang database and barang table.
+The SQL file will create the **gudang** database and **barang** table.
 
-4. Open the Application
+### 4. Open the Application
 
 Open:
+
+```text
 http://localhost/Warehouse-inventory/beranda.php
+```
+
+---
 
 ## 📊 Main Pages
-Dashboard
-/beranda.php
+
+### Dashboard
+
+`/beranda.php`
 
 Displays:
-Total product types
-Total stock
-Total inventory value
-Low-stock products
-Recently added products
-Inventory
-/index.php
+
+- Total product types
+- Total stock
+- Total inventory value
+- Low-stock products
+- Recently added products
+
+### Inventory
+
+`/index.php`
 
 Used to:
-Add products
-Edit products
-Delete products
-Search products
-View stock
-View inventory value
-Reports
-/laporan.php
+
+- Add products
+- Edit products
+- Delete products
+- Search products
+- View stock
+- View inventory value
+
+### Reports
+
+`/laporan.php`
 
 Displays a complete inventory report and provides a print function.
 
+---
+
 ## 🗄️ Database
 
-Database:
-gudang
+**Database:** `gudang`
 
-Main table:
-barang
+**Main table:** `barang`
 
-Columns:
+| Column | Description |
+|----------|------------|
+| id | Product ID |
+| nama_barang | Product Name |
+| jumlah | Stock Quantity |
+| harga_per_pcs | Price Per Unit |
+| created_at | Creation Date |
+| updated_at | Last Update Date |
 
-Column	Description
-id	Product ID
-nama_barang	Product name
-jumlah	Stock quantity
-harga_per_pcs	Price per unit
-created_at	Creation date
-updated_at	Last update date
+---
 
 ## 🔐 Security
 
 The application uses PDO prepared statements for database queries to reduce SQL injection risks.
+
 User-provided values are also escaped when displayed in HTML.
+
+---
 
 ## 📱 Responsive Design
 
 The interface supports:
-Desktop
-Laptop
-Tablet
-Mobile
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
 
 The sidebar automatically changes into a mobile navigation drawer on smaller screens.
 
-##📄 License
+---
+
+## 📄 License
 
 This project was created for educational and inventory management purposes.
 
+### .gitignore
+
+```gitignore
 *.log
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
+```
