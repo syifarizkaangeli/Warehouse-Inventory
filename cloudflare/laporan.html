@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan - Warehouse Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-inner">
+
+        <h2>Warehouse Inventory</h2>
+
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="laporan.html" class="active">Laporan</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="page-header">
+
+        <div>
+            <h1>Laporan Inventaris</h1>
+            <p>Ringkasan seluruh barang yang tersimpan.</p>
+        </div>
+
+        <button
+            class="btn-primary"
+            onclick="window.print()"
+        >
+            Cetak Laporan
+        </button>
+
+    </section>
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <span>Total Barang</span>
+            <strong id="laporanTotalBarang">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Total Stok</span>
+            <strong id="laporanTotalStok">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Total Nilai</span>
+            <strong id="laporanTotalNilai">Rp0</strong>
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Barang</th>
+                        <th>Jumlah</th>
+                        <th>Harga / Pcs</th>
+                        <th>Nilai Inventaris</th>
+                    </tr>
+                </thead>
+
+                <tbody id="laporanTable">
+
+                    <tr>
+                        <td colspan="5" class="loading">
+                            Memuat laporan...
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

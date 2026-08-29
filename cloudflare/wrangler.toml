@@ -1,0 +1,10 @@
+name = "warehouse-inventory"
+
+compatibility_date = "2026-08-29"
+
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "warehouse-db"
+database_id = "bd687d15-2bfb-4a7b-97b4-9558bd90ac5f"
